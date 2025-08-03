@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#4b9b6c">
+    <!--
+      This viewport works for phones with notches.
+      It's optimized for gestures by disabling global zoom.
+     -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1.00001, viewport-fit=cover"
+    />
+    <!--
+      Preconnect to essential domains
+    -->
+    <link rel="preconnect" href="https://bsky.social">
+    <title>%WEB_TITLE%</title>
+
+    <link rel="preload" as="font" type="font/woff2" href="/static/media/InterVariable.c504db5c06caaf7cdfba.woff2" crossorigin>
+
+    <style>
+      /**
+       * Minimum styles required to render splash.
+       *
+       * ALL OTHER STYLES BELONG IN `src/style.css`
+       *
+       * THIS NEEDS TO BE DUPLICATED IN `bskyweb/templates/base.html`
+       */
+      @font-face {
+        font-family: 'InterVariable';
+        src: url(/static/media/InterVariable.c504db5c06caaf7cdfba.woff2) format('woff2');
+        font-weight: 300 1000;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'InterVariableItalic';
+        src: url(/static/media/InterVariable-Italic.01dcbad1bac635f9c9cd.woff2) format('woff2');
+        font-weight: 300 1000;
+        font-style: italic;
+        font-display: swap;
+      }
+      html {
+        background-color: white;
+      }
+      @media (prefers-color-scheme: dark) {
+        html {
+          background-color: black;
+        }
+      }
+      html,
+      body {
+        margin: 0px;
+        padding: 0px;
+        font-family: InterVariable, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Liberation Sans', Helvetica, Arial, sans-serif;
+        text-rendering: optimizeLegibility;
+        /* Platform-specific reset */
+        -webkit-overflow-scrolling: touch;
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -ms-overflow-style: scrollbar;
+        font-synthesis-weight: none;
+      }
+      html,
+      body,
+      #root {
+        display: flex;
+        flex: 1 0 auto;
+        min-height: 100%;
+        width: 100%;
+      }
+      #splash {
+        position: fixed;
+        width: 125px;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%) translateY(-50px);
+      }
+      /**
+       * We need these styles to prevent shifting due to scrollbar show/hide on
+       * OSs that have them enabled by default. This also handles cases where the
+       * screen wouldn't otherwise scroll, and therefore hide the scrollbar and
+       * shift the content, by forcing the page to show a scrollbar.
+       */
+      body {
+        width: 100%;
+        overflow-y: scroll;
+      }
+    </style>
+  </head>
+
+  <body>
+  <noscript style="
+     background-color: #fff;
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     z-index: 9999;
+     margin: 1em;
+   ">
+    <h1 lang="en">JavaScript Required</h1>
+    <p lang="en">This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is.
+    <p lang="en">Learn more about Bluesky at <a href="https://bsky.social">bsky.social</a> and <a href="https://atproto.com">atproto.com</a>, or this fork at <a href="https://github.com/gunjo-org/social-app">github.com/gunjo-org/social-app</a>.
+  </noscript>
+
+    <!-- The root element for your Expo app. -->
+    <div id="root">
+      <div id="splash">
+        <!-- deer SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+
+          <defs>
+            <linearGradient x1="0" y1="0" x2="0" y2="1" id="index_sky"><stop offset="0" stop-color="#a3b18a" stop-opacity="1"></stop><stop offset="1" stop-color="#344e41" stop-opacity="1"></stop></linearGradient>
+          </defs>
+          <path fill="url(#index_sky)"
+            d="m 149.96484,186.56641 46.09766,152.95898 c 0,0 -6.30222,-9.61174 -15.60547,-17.47656 -8.87322,-7.50128 -28.4082,-4.04492 -28.4082,-4.04492 0,0 6.14721,39.88867 15.53125,44.39843 10.71251,5.1482 22.19726,0.16993 22.19726,0.16993 0,0 11.7613,-4.87282 22.82032,31.82421 5.26534,17.47196 15.33258,50.877 20.9707,69.58594 2.16717,7.1913 8.83789,7.25781 8.83789,7.25781 0,0 6.67072,-0.0665 8.83789,-7.25781 5.63812,-18.70894 15.70536,-52.11398 20.9707,-69.58594 11.05902,-36.69703 22.82032,-31.82421 22.82032,-31.82421 0,0 11.48475,4.97827 22.19726,-0.16993 9.38404,-4.50976 15.5332,-44.39843 15.5332,-44.39843 0,0 -19.53693,-3.45636 -28.41015,4.04492 -9.30325,7.86482 -15.60547,17.47656 -15.60547,17.47656 l 46.09766,-152.95898 -49.32618,83.84179 -20.34375,-31.1914 6.35547,54.96875 -23.1582,39.36132 c 0,0 -2.97595,5.06226 -5.94336,4.68946 -0.009,-0.001 -0.0169,0.003 -0.0254,0.01 -0.008,-0.007 -0.0167,-0.0109 -0.0254,-0.01 -2.96741,0.3728 -5.94336,-4.68946 -5.94336,-4.68946 l -23.1582,-39.36132 6.35547,-54.96875 -20.34375,31.1914 z"
+            transform="matrix(2.6921023,0,0,1.7145911,-396.58283,-308.01527)"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
