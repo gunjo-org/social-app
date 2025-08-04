@@ -510,7 +510,7 @@ function MutedWordRow({
                 )}
                 {word.actorTarget === 'exclude-following' && (
                   <>
-                    &#x0020;&#x2022;&#x0020;
+                    &#x00a0;&#x2022;&#x00a0;
                     <Trans>Excludes users you follow</Trans>
                   </>
                 )}

@@ -102,7 +102,7 @@ export function DesktopRightNav({routeName}: {routeName: string}) {
               label={_(msg`Feedback`)}>
               {_(msg`Feedback`)}
             </InlineLinkText>
-            &#x0020;&#x2022;&#x0020;
+            &#x00a0;&#x2022;&#x00a0;
           </>
         )}
         <InlineLinkText
@@ -110,13 +110,13 @@ export function DesktopRightNav({routeName}: {routeName: string}) {
           label={_(msg`Privacy`)}>
           {_(msg`Privacy`)}
         </InlineLinkText>
-        &#x0020;&#x2022;&#x0020;
+        &#x00a0;&#x2022;&#x00a0;
         <InlineLinkText
           to="https://app.gunjo.org/about/tos"
           label={_(msg`Terms`)}>
           {_(msg`Terms`)}
         </InlineLinkText>
-        &#x0020;&#x2022;&#x0020;
+        &#x00a0;&#x2022;&#x00a0;
         <InlineLinkText label={_(msg`Help`)} to={HELP_DESK_URL}>
           {_(msg`Help`)}
         </InlineLinkText>
