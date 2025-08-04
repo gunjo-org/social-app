@@ -35,6 +35,8 @@ jobs:
         uses: actions/configure-pages@v5
       - name: yarn install
         run: yarn
+      - name: Make pages_build executable
+        run: chmod +x ./pages_build.sh
       - name: Build
         run: ./pages_build.sh
       - name: Copy index.html to 404.html for SPA redirection
