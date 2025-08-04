@@ -1,11 +1,8 @@
 import React from 'react'
 import {StyleSheet, type TextProps} from 'react-native'
 import Svg, {
-  Defs,
-  LinearGradient,
   Path,
   type PathProps,
-  Stop,
   type SvgProps,
 } from 'react-native-svg'
 
@@ -46,20 +43,12 @@ export const Logo = React.forwardRef(function LogoImpl(props: Props, ref) {
 
   return (
     <Svg
-      fill="none"
+      fill="#4166f5"
       // @ts-ignore it's fiiiiine
       ref={ref}
       viewBox="0 0 512 512"
       {...rest}
       style={[{width: size, height: size * ratio}, styles]}>
-      {gradient && (
-        <Defs>
-          <LinearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-            <Stop offset="0" stopColor="#4166f5" stopOpacity="1" />
-            <Stop offset="1" stopColor="#071f7f" stopOpacity="1" />
-          </LinearGradient>
-        </Defs>
-      )}
 
       <Path
         fill={_fill}
