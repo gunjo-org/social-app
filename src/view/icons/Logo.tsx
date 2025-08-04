@@ -62,7 +62,8 @@ export const Logo = React.forwardRef(function LogoImpl(props: Props, ref) {
       )}
 
       <Path
-        fill={_fill}
+        fill="#4166f5"
+//      fill={_fill}
         d="M 253.40,387.68
            C 253.40,387.68 233.34,308.52 233.34,308.52
              232.61,305.73 229.81,304.01 226.97,304.70
