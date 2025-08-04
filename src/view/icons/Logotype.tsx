@@ -25,7 +25,7 @@ export function Logotype({
       height={Number(size) * ratio}>
       <Text
         fill={fill || pal.text.color}
-        x="0" y="12"
+        x="14" y="14"
         font-size="16" font-weight="600">
         Naledi
       </Text>
