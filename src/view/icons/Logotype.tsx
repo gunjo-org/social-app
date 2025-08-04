@@ -6,7 +6,7 @@ import Svg, {
 
 import {usePalette} from '#/lib/hooks/usePalette'
 
-const ratio = 16 / 8
+const ratio = 16 / 80
 
 export function Logotype({
   fill,
@@ -19,7 +19,7 @@ export function Logotype({
   return (
     <Svg
       fill="none"
-      viewBox="0 0 48 16"
+      viewBox="0 0 80 16"
       {...rest}
       width={size}
       height={Number(size) * ratio}>
