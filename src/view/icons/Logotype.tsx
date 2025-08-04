@@ -6,7 +6,7 @@ import Svg, {
 
 import {usePalette} from '#/lib/hooks/usePalette'
 
-const ratio = 16 / 80
+const ratio = 24 / 60
 
 export function Logotype({
   fill,
@@ -19,14 +19,14 @@ export function Logotype({
   return (
     <Svg
       fill="none"
-      viewBox="0 0 80 16"
+      viewBox="0 0 60 24"
       {...rest}
       width={size}
       height={Number(size) * ratio}>
       <Text
         fill={fill || pal.text.color}
-        x="14" y="14"
-        font-size="16" font-weight="600">
+        x="0" y="14"
+        font-size="24" font-weight="600">
         Naledi
       </Text>
     </Svg>
