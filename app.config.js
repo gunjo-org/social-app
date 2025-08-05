@@ -47,7 +47,7 @@ module.exports = function (_config) {
       },
       icon: './assets/app-icons/ios_icon_default_light.png',
       userInterfaceStyle: 'automatic',
-      primaryColor: '#4b9b6c',
+      primaryColor: '#4166f5',
       ios: {
         supportsTablet: false,
         bundleIdentifier: 'org.gunjo.app',
