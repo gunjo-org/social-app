@@ -10,7 +10,7 @@ export const BSKY_SERVICE = 'https://bsky.social'
 export const PUBLIC_BSKY_SERVICE =
   ENV_PUBLIC_BSKY_SERVICE || 'https://public.api.bsky.app'
 export const DEFAULT_SERVICE = BSKY_SERVICE
-export const HELP_DESK_URL = `https://foundation.gunjo.org/help/support`
+export const HELP_DESK_URL = `https://github.com/gunjo-org/social-app/issues/new/choose`
 export const EMBED_SERVICE = 'https://embed.bsky.app'
 export const EMBED_SCRIPT = `${EMBED_SERVICE}/static/embed.js`
 export const BSKY_DOWNLOAD_URL = 'https://bsky.app/download'
