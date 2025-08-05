@@ -106,13 +106,13 @@ export function DesktopRightNav({routeName}: {routeName: string}) {
           </>
         )}
         <InlineLinkText
-          to="https://app.gunjo.org/about/privacy"
+          to="https://foundation.gunjo.org/rules/privacy"
           label={_(msg`Privacy`)}>
           {_(msg`Privacy`)}
         </InlineLinkText>
         &#x00a0;&#x2022;&#x00a0;
         <InlineLinkText
-          to="https://app.gunjo.org/about/tos"
+          to="https://foundation.gunjo.org/rules/terms-of-use"
           label={_(msg`Terms`)}>
           {_(msg`Terms`)}
         </InlineLinkText>
